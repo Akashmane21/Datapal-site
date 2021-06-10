@@ -284,7 +284,9 @@ lottie-player{
                 <a href="https://akashmane21.github.io/Akash/">
     <button style="background-color: rgb(245, 244, 244);">About Dev. </button></a>
     <h1 style="width: 50px;">         </h1>
+    <a href="https://drive.google.com/file/d/10XkBAKQ_pemP2gP-WAu7e9KZyMzIBrwS/view">
     <button>Download <i  class="fa fa-download" ></i>
+    </a>
     </button>
 </div>
         </div>
@@ -402,18 +404,20 @@ lottie-player{
 
 <div class="box-div">
     <div class="box">
-        <h2>Name:</h2>
-        <div class="input-group mb-3">
-            <div class="input-group-prepend">
-              <span class="input-group-text" id="basic-addon1">@</span>
-            </div>
-            <input type="text" class="form-control" placeholder="Name " aria-label="Username" aria-describedby="basic-addon1">
-          </div>        <br>
-        <h2>Description</h2>
-        <textarea placeholder="Type your Feedback here.." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        <br>
-        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+        <form method="post" autocomplete="off" name="google-sheet">
 
+                <h2>Name:</h2>
+                <div class="input-group mb-3">
+                    <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">@</span>
+                    </div>
+                    <input type="text" name="Name" class="form-control" placeholder="Name " aria-label="Username" aria-describedby="basic-addon1">
+                </div>        <br>
+                <h2>Description</h2>
+                <textarea  name = "Message" placeholder="Type your Feedback here.." class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                <br>
+                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
     </div>
 </div>
 
@@ -474,7 +478,7 @@ lottie-player{
     .row >img{
         width: 100px; height: auto; border-radius: 50%;
         align-items: center;
-        margin-left: 130px;
+        margin-left: 115px;
     }
     .box-div{
        
@@ -522,5 +526,17 @@ lottie-player{
   background: #b30000; 
 }
 </style>
+<script>
+      const scriptURL = 'https://script.google.com/macros/s/AKfycbwunSCg4dv6spf-fDmMk4gMjvSDqaVfMsJ2GseAt-bjpD9HTS7ANN71FR-g9vfmUKhQ/exec'
+            const form = document.forms['google-sheet']
+          
+            form.addEventListener('submit', e => {
+                alert("Your Data📝 is Sending.... plz Wait💕")
+              e.preventDefault()
+              fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                .then(response => alert("Thanks for Contacting📞 me..! I Will Contact You Soon...💖"))
+                .catch(error => console.error('Error!', error.message))
+            })
+</script>
 </body>
 </html>
