@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    
+    <title>Document</title>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
+
+    <script>          </script>
+
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+        /* @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100&display=swap');
+        
+        @import url('https://fonts.googleapis.com/css2?family=Abel&family=Montserrat:wght@100&family=Nanum+Myeongjo&display=swap'); */
+        @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+        .main-body{
+    padding: 20px;
+}
+.MyClass{
+    display: none;
+
+}
+        h1{
+            /* font-family: 'Montserrat', sans-serif; */
+           border-bottom-width: 8px;
+           border-color: blueviolet;
+            
+
+        }
+        h2{
+            font-family: 'Montserrat', sans-serif;
+        }
+        h3{
+            /* font-family: 'Montserrat', sans-serif; */
+
+                        color: rgb(194, 189, 189);
+            font-size: 17px;
+            font-style: normal;
+        }
+        h6{
+            font-family: 'Montserrat', sans-serif;
+font-size: 15px;
+color: gray;
+        }
+        img{
+            width: 50%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+        .images-block{
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+            
+        }
+      
+        .heading{
+            background-image:  url( "https://wonderfulengineering.com/wp-content/uploads/2014/11/Quote-wallpaper-33.jpg") ;
+            /* padding: 10px; */
+            background-size: auto 300px;
+            margin-bottom: 40px;
+            /* background-color: orange; */
+            align-items: center;
+            justify-content: center;
+            /* text-align: center; */
+            height: 300px;
+            display: flex;
+        }
+        .child{
+            background: rgba(255, 255, 255, 0) linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, rgba(255, 255, 255, .1) 40%, rgb(10,25,47) 75%, rgb(10,25,47) 100%) repeat scroll 0 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            align-items: center;
+            /* display: flex;    */
+            justify-content: center;
+        }
+        .child > h1{
+            margin-top: 10px;
+            font-family: 'Lobster', cursive;
+            font-weight: normal;
+            color: rgb(224, 166, 5);
+        }
+        .child >img{
+            margin-top: 40px;
+            height: 100px;
+            width: 100px;
+        }
+        .img-margin{
+            padding-top: 30px;
+
+        }
+        .img-down{
+            padding-bottom: 30px;
+        }
+
+       
+        
+       
+        @media(min-width:600px){
+            lottie-player{
+    width: 600px; height: 600px; position: relative; top: -150px; left: -40px;
+
+}
+            button{
+                margin-right: 30px;
+            }
+            .child >img{
+            margin-top: 180px;
+            height: 50px;
+            width: 50px;
+        }
+            .child{
+            display: flex;
+            }
+            .child > h1{
+            margin-top: 180px;
+            font-family: 'Lobster', cursive;
+        }
+            h1{
+            font-family: 'Montserrat', sans-serif;
+            font-size: 30px;
+            font-weight: bold;
+
+        }
+            .images-block{
+            display: flex;
+            flex-wrap: wrap;
+            width: 100%;
+            height: auto;
+            justify-content: center;
+        }
+          
+    img{
+            width: 15%;
+            height: auto;
+            margin: 10px;
+
+        }
+        .img-margin{
+            padding-top: 30px;
+
+        }
+        .img-down{
+            padding-bottom: 30px;
+        }
+
+   
+        .about-area{
+      
+      display: flex;
+      flex-direction: row;
+  }
+
+  .left-area{
+    /* background-color: gray; */
+    width: 50%;
+}
+.right-area{
+    /* background-color: orange; */
+    width: 50%;
+}
+  .item{
+      width: 5%;
+  }
+
+  .left-area >h1{
+
+font-size: 50px;
+line-height: 1.1;
+font-weight: 900;
+}
+
+  }
+
+
+  .about-area{
+      height: auto;
+      /* padding: 20px; */
+      margin-bottom: 100px;
+  }
+  .left-area{
+    height: auto;
+   
+}
+
+
+.right-area{
+    height: 300px;
+    overflow: hidden;
+    margin-top: 30px;
+   
+}
+.lang{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.item{
+    /* width: 30%; */
+    align-items: center;
+    text-align: center;
+    margin-right: 30px;
+}
+
+.item >i{
+    color: gray;
+    cursor: pointer;
+    font-size: 40px;
+}
+i:hover{
+color: blueviolet;
+}
+
+
+
+
+.btns{
+    display: flex;
+    
+}
+button{
+    padding: 10px 20px;
+    background-color: rgba(137, 43, 226, 0.555);
+    justify-content: space-around;
+    font-size: 20px;
+    border-radius: 10px;
+    margin-right: 10%;
+    border-width: 0px;
+}
+button:hover{
+    background-color: white;
+    position: relative;
+    top: -5px;
+    cursor: pointer;
+}
+button >i{
+    height: 10px;
+    width: 10px;
+}
+.main-body{
+    position: relative;
+    top: -50px;
+}
+lottie-player{
+    width: 600px; height: 600px; position: relative; top: -150px; left: -100px;
+
+}
+    </style>
+</head>
+<body>
+    <div class="heading">
+        <div class="child">
+            <img id="logo" src="https://firebasestorage.googleapis.com/v0/b/reactcrud-7b0fc.appspot.com/o/Image%2FLogo%20g.png?alt=media&token=221abd05-4cac-4952-a5fe-6dc906e0af0e" alt="Datapal logo">
+            <h1 id="heading-h1">Datapal - Keep it All in one ✨ </h1>
+
+        </div>
+        
+    </div>
+<div class="main-body">
+
+    <div class="about-area">
+        <div class="left-area">
+            <h1>Hi all ! I'm Akash Mane👋</h1>
+            <h2>Datapal - Android App</h2>
+            <h3>Note Taking , Passward Saving Android Application  , 
+            in this App you can Add your Notes , Daily Task's , Important Links And The Passward's </h3>
+<br>
+<br>
+            <div class="btns">
+    <button style="background-color: rgb(245, 244, 244);">About</button>
+    <h1 style="width: 100px;">         </h1>
+    <button>Download <i  class="fa fa-download" ></i>
+    </button>
+</div>
+        </div>
+
+        <div class="right-area">
+            <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_c6lev9vw.json"  background="transparent"  speed="1"  style=""  loop  autoplay></lottie-player>
+        </div>
+    </div>
+    <h1>What I use ?</h2>
+        <br>
+        <br>
+
+    <div class="lang">
+        <div class="item">
+            <i class="fab fa-js" ></i>
+            <h6>javascript</h6>
+        </div>
+            <div class="item">
+                <i class="fab fa-react"></i>
+                <h6>React Native</h6>
+            </div>
+
+            <div class="item">
+                <i class="fas fa-fire"></i>
+                <h6>Firebase</h6>
+            </div>
+
+            
+            <div class="item">
+                <i class="fab fa-npm" ></i>
+                <h6>npm</h6>
+            </div>
+
+            <div class="item">
+                <i class="fab fa-node" ></i>
+                <h6>Node -js</h6>
+            </div>
+
+            <div class="item">
+                <i class="fab fa-github" ></i>
+                <h6>Git</h6>
+            </div>
+
+
+           
+
+    </div>
+<br>
+<br>
+    <h1>Screen Shots : </h1>
+<br>
+
+    
+
+    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Dark 🌚</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Light🌞</button>
+        </li>
+      </ul>
+      <div class="tab-content" id="pills-tabContent">
+        <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
+            <div class="images-block" id="white">
+                <img src="Black/black sc (3).png"  class="img-margin" alt="Home Page">
+                <img src="Black/black sc (1).png" class="img-down" alt="Home Page 2">
+                <img src="Black/black sc (14).png"  class="img-margin" alt="Home Page 3">
+                <img src="Black/black sc (2).png" class="img-down" alt="All Note's Page">
+                <img src="Black/black sc (5).png" class="img-margin"  alt="Note Detail Page">
+                <img src="Black/black sc (10).png" class="img-down" alt="Add Note Page">
+                <img src="Black/black sc (4).png"  class="img-margin" alt="Task Page">
+                <img src="Black/black sc (11).png" class="img-down" alt="All Links Page">
+                <img src="Black/black sc (7).png" class="img-margin"  alt="Add link ">
+                <img src="Black/black sc (9).png" class="img-down" alt="passward Page">
+                <img src="Black/black sc (6).png" class="img-margin"  alt="Add passward Page">
+                <img src="Black/black sc (12).png" class="img-down" alt=" show passward Page">
+                <img src="Black/black sc (13).png"  class="img-margin" alt=" Auth passward Page">
+        
+        
+        
+            </div>
+
+        </div>
+        <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+              
+    <div class="images-block" id="black">
+        <img src="White/white sc (5).png"  class="img-margin" alt="Home Page">
+        <img src="white/white sc (10).png" class="img-down" alt="Home Page 2">
+        <img src="white/white sc (15).png"  class="img-margin" alt="Home Page 3">
+        <img src="white/white sc (1).png" class="img-down" alt="All Note's Page">
+        <img src="white/white sc (4).png" class="img-margin"  alt="Note Detail Page">
+        <img src="white/white sc (14).png" class="img-down" alt="Add Note Page">
+        <img src="white/white sc (11).png"  class="img-margin" alt="Task Page">
+        <img src="white/white sc (2).png" class="img-down" alt="All Links Page">
+        <img src="white/white sc (6).png" class="img-margin"  alt="Add link ">
+        <img src="Black/black sc (9).png" class="img-down" alt="passward Page">
+                <img src="Black/black sc (6).png" class="img-margin"  alt="Add passward Page">
+                <img src="Black/black sc (12).png" class="img-down" alt=" show passward Page">
+                <img src="Black/black sc (13).png"  class="img-margin" alt=" Auth passward Page">
+        
+
+    </div>
+
+        </div>
+        <!-- <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">...</div> -->
+      </div>
+
+</div>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+<style>
+      body{
+            background-color: #0a192f;
+            align-items: center;
+            justify-content: center;
+           margin: 0px;
+           padding: 0px;
+           color: #ffffff;
+        }
+        
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgba(29, 25, 78, 0); 
+  background-color: #0a192f;
+
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: rgb(4, 197, 240); 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000; 
+}
+</style>
+</body>
+</html>
